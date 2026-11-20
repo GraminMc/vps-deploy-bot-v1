@@ -52,7 +52,7 @@ del _logging_tmp
 
 # Load environment variables
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
-BOT_NAME = os.getenv('BOT_NAME', 'EVM-V3')
+BOT_NAME = os.getenv('BOT_NAME', 'VPS Bot')
 PREFIX = os.getenv('BOT_PREFIX', os.getenv('PREFIX', '1')).strip() or '1'
 
 def _normalize_prefix(value: str) -> str:
@@ -110,10 +110,10 @@ _ai_agent_state: Dict[str, Any] = {
 }
 _ai_agent_last_repair: Dict[str, float] = {}
 _ai_agent_lock = asyncio.Lock()
-BOT_DEVELOPER = os.getenv('BOT_DEVELOPER', 'rehan.404')
-BOT_THUMBNAIL_URL = os.getenv('BOT_THUMBNAIL_URL', 'https://cdn.discordapp.com/attachments/1553456349566996520/1557448669694009374/799adf9b-0823-4739-af55-66049200d43f.png?backend=b2&ex=6ac7d69a&is=6ac6851a&hm=fd87bffcac20ca1c1445c8e4b9c6ae27f2cf629d2e4681d84884a7a38a5a8ef4&')
+BOT_DEVELOPER = os.getenv('BOT_DEVELOPER', 'istiakraihan_')
+BOT_THUMBNAIL_URL = os.getenv('BOT_THUMBNAIL_URL', 'https://cdn.phototourl.com/anon/2026-11-20-5f3fecde-0e4a-442d-977e-05a7f3fad9b3.png')
 BOT_ICON_URL = os.getenv('BOT_ICON_URL', BOT_THUMBNAIL_URL)
-BOT_BANNER_URL = os.getenv('BOT_BANNER_URL', 'https://cdn.discordapp.com/attachments/1553456349566996520/1557448713411100802/file_000000003be882118584bb3106cc0d6d.png?backend=b2&ex=6ac7d6a5&is=6ac68525&hm=ede6ad06007eb039279df2fcb9f1dfb6a534497873254b3063c3b880c1de2804&')
+BOT_BANNER_URL = os.getenv('BOT_BANNER_URL', 'https://cdn.phototourl.com/anon/2026-11-20-5f3fecde-0e4a-442d-977e-05a7f3fad9b3.png')
 
 # VPS Expiration Settings
 DEFAULT_VPS_EXPIRATION_DAYS = int(os.getenv('DEFAULT_VPS_EXPIRATION_DAYS', '30'))
